@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar {
+    display: grid;
+    position: relative;
+    grid-area: "";
+    grid-auto-columns: 8fr 40fr;
+    grid-template-areas: "logo cat";
+    width: 100vw;
+    height: 20vh;
+    background-color: gainsboro;
+}
+
+.logo {
+    grid-area: 'logo';
+    margin-left: 3rem;
+    margin-top: 1rem;
+    width: 7rem;
+    height: 5rem;
+}
+
+.categorias {
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-items: flex-end;
+    justify-content: flex-end;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    grid-area: cat;
+    list-style: none;
+    text-decoration: none;
+}
+
+.categorias button {
+    margin: 1rem;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+/* From uiverse.io */
+button {
+    --color: #50e0f0;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 0px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+}
+
+.categorias button a {
+    text-decoration: none;
+    color: rgb(60, 58, 58);
+}
