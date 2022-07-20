@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import ItemCount from '../ItemCount/ItemCount.js'
 import { useEffect } from "react";
-import {products} from '../../mock/products';
+import products from '../../mock/products';
 import ItemList from '../ItemList/ItemList';
 
 const ItemListContainer = () => {

@@ -1,4 +1,4 @@
-export const products = [
+const products = [
     {
         id: 1,
         name: 'Correa',
@@ -24,3 +24,5 @@ export const products = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum tempus erat. Aliquam interdum, lorem quis fringilla molestie, purus ligula congue sapien, eu dictum justo nunc quis nisi.'
     }
 ]
+
+export default products;
